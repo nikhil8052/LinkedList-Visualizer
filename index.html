@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=1024">
+
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid mt-4 mb-4 m-2 pt-2 bs">
+        <div id="topmostrow">
+            <div style="display: flex;">
+                <img src="./icons/topicon.png" style="width:70px;height: 70px;" alt="Not Found">
+                <img src="./icons/linkedlist.png" style="width:270px;" alt="Not Found">
+                <div class="row w-100">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="card fr specificinfo">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-8 border">
+                <div class="mt-5 pb-3" id="list_main_container">
+                    <img src="./icons/add.png" class="img-fluid border " onclick="buttonClicked(this)" data-toggle="modal"
+                        data-target="#exampleModal" style="margin-left: 210px;" alt="Not Found">
+                    <img src="./icons/man.png" class="img-fluid " style="margin-left: 30px;" alt="Not Found">
+                    <h3 class="mt-5 ml-5 ">Click Me</h3>
+                </div>
+            </div>
+            <div class="col-md-4 border p-2">
+                <h3 class="text-center pb-1"> Oprations </h3>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <button type="button" onclick="buttonClicked(this)" value="end"
+                                class="btn btn-secondary m-1" data-toggle="modal" data-target="#exampleModal">
+                                Insert Value
+                            </button>
+
+                            <button type="button" onclick="buttonClicked(this)" value="begin"
+                                class="btn btn-secondary m-1" data-toggle="modal" data-target="#exampleModal">
+                                Insert Beginning
+                            </button>
+
+                            <button type="button" onclick="buttonClicked(this)" value="findmid"
+                                class="btn btn-secondary m-1">
+                                Find Mid
+                            </button>
+
+                            <button type="button" onclick="buttonClicked(this)" value="findmid"
+                                class="btn btn-secondary m-1">
+                                Calculate length
+                            </button>
+
+                            <button type="button" onclick="buttonClicked(this)" value="findmid"
+                                class="btn btn-secondary m-1">
+                                Convert into Array
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" onclick="buttonClicked(this)" value="t" class="btn btn-secondary m-1">
+        Trasiton effect
+    </button>
+
+
+    <!-- Seond Container for showing the meta deta  -->
+
+
+    <!-- MODALS -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Enter value </label>
+                        <input type="text" class="form-control" id="append_last" aria-describedby="emailHelp"
+                            placeholder="Enter Value ">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        id="add_close_btn">Close</button>
+                    <button type="button" class="btn btn-primary" id="end" onclick="addNode(this)">Add</button>
+                    <button type="button" class="btn btn-primary" id="begin" onclick="insertAtBegin(this)">Add
+                        Begin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- LINKS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
